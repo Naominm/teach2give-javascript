@@ -13,6 +13,26 @@ function showGlobal() {
 }
 // Accesible  outside a function
 ```
+** working example**
+```js
+let age = 30;// global variable
+
+function myAge() {
+return age;// i can acess it here inside a funtion
+}
+
+console.log(`i am ${age} years old`); //acessing the variable outside the function
+
+console.log('my age is', myAge());//calling the function to acess the variable
+```
+
+**output**
+```js
+i am 30 years old
+my age is 30
+```
+
+
 
 ## 2. Function scope
 local scope/ function scope
@@ -20,8 +40,25 @@ local scope/ function scope
  ```js
  function Example() {
   let local = "function-scoped variable";
-  console.log(local); // Aonly acessible inside the funtion.
+  console.log(local); // are only acessible inside the funtion.
 }
+```
+
+**working example**
+```js
+function myAge() {
+let age = 30;// functional scope variable
+return age;// i can acess it here inside a funtion
+}
+
+// console.log(`i am ${age} years old`); //acessing the variable outside the function will lead to an error theerefore i have commented for it to work
+
+console.log('my age is', myAge());//calling the function to acess the variable
+```
+
+**The output is**
+```js
+my age is 30
 ```
 
  ## 3. Block Scope
