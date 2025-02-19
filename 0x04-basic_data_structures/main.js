@@ -1,32 +1,32 @@
-//objects
+//sets
 
-const student ={
-    firstName:"Naomi",
-    lastName:"Smith",
-    age:"30",
-    major:"software engineering",
-}
+const mySet=new Set (["leah","mary",true,55,"cat"]);
 
-Object.seal(student)
-student.firstName="jane"
-student.middleName="Doe" // you cant add, update, or delete as its freezed
-console.log(student)
+console.log(mySet.size);
 
-for (let keys in student){
-    console.log(keys)
-}
-// console.log(Object.keys(student))
-// console.log(Object.values(student))
+// console.log(  mySet.has("cat")); // true
+// console.log(mySet.has("green"));// false
+
+// console.log(mySet);
 
 
-// const property={
-//     name:"Ane-plaza",
-//     location:{
-//         country:"Kenya",
-//         county:"muranga",
-//         location:"kiharu"
-//     },
-//     type:"Business",
-//     Partners:["josh","ann","mary"],
-// }
-// console.log(student)
+//removing items from the set
+
+// mySet.delete("cat");
+// mySet.delete(true);
+// mySet.delete("a");
+
+// console.log(mySet);
+
+
+
+
+
+
+
+
+
+
+// const items=new Set(["nate","jane","bob",4,35,"cat"]);
+
+// console.log(items)
