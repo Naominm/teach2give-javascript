@@ -1,12 +1,12 @@
 
-let a =8;
-let b=9;
+// let a =8;
+// let b=9;
 
-function product(number1, number2){
-return number1*number2;
-}
+// function product(number1, number2){
+// return number1*number2;
+// }
 
-console.log( `the sum of ${a} and ${b}  is ${a + b} and the product is ${product(a,b)},`);
+// console.log( `the sum of ${a} and ${b}  is ${a + b} and the product is ${product(a,b)},`);
 
 
 
@@ -68,10 +68,12 @@ console.log( `the sum of ${a} and ${b}  is ${a + b} and the product is ${product
 
 
 
-// sayHello()
 
 
-// function sayHello(){
-//     var name="naomi";
-//     console.log(name)
-// }
+
+function sayHello(name="guest"){
+   
+    console.log(`hello ${name}`)
+}
+sayHello()
+sayHello("bob")
