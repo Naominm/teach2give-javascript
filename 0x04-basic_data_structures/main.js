@@ -1,32 +1,14 @@
-//sets
+//Maps
 
-const mySet=new Set (["leah","mary",true,55,"cat"]);
+const myMap= new Map();
 
-console.log(mySet.size);
-
-// console.log(  mySet.has("cat")); // true
-// console.log(mySet.has("green"));// false
-
-// console.log(mySet);
+myMap.set("firstName","Naomi");
+myMap.set("lastName","Mbugua");
+myMap.set("age","24");
+myMap.set("pet","parrot");
 
 
-//removing items from the set
-
-// mySet.delete("cat");
-// mySet.delete(true);
-// mySet.delete("a");
-
-// console.log(mySet);
+console.log(myMap.size)
 
 
-
-
-
-
-
-
-
-
-// const items=new Set(["nate","jane","bob",4,35,"cat"]);
-
-// console.log(items)
+// console.log(myMap);
