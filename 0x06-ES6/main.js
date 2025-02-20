@@ -1,12 +1,10 @@
 
-// let a =8;
-// let b=9;
 
-// function product(number1, number2){
-// return number1*number2;
-// }
+const User={name:"naomi", role:"User"};
 
-// console.log( `the sum of ${a} and ${b}  is ${a + b} and the product is ${product(a,b)},`);
+const updatedUser={...User, role:"Admin"};
+
+console.log(updatedUser)
 
 
 
@@ -17,31 +15,11 @@
 
 
 
-// const multiline=`this is the first line
-// This is the second line
-// this is the third line`
+// const person={name:"naomi", age:"24"};
 
-// console.log(multiline)
-  
+// const copy={...person}
 
-
-
-
-
-// const name="naomi";
-// const age=24;
-
-// console.log(`my name is ${name} i am ${age} years old`)
-
-
-
-
-
-
-
-// const add =(a,b)=> a + b ;
-
-// console.log(add(6,8));
+// console.log(copy)
 
 
 
@@ -51,11 +29,29 @@
 
 
 
-// function add(a,b){
-//     return a+b;
-// }
 
-// console.log(add(6,8));
+// const array1=[3,4,5]
+
+// const newElements=[1,2, ...array1,6,7,8,9]
+
+// console.log(newElements);
+
+
+
+
+
+
+
+
+
+
+// const array1=[4,5,6];
+
+// const array2=[7,8,9];
+
+// const merged=[...array1, ...array2]
+
+// console.log(merged)
 
 
 
@@ -67,13 +63,38 @@
 
 
 
+// const array =[4,5,6];
+
+// const copy=array;
+// copy.push(55);
+
+// console.log(array);
+
+// // in this example the array has been mutated to avoid this lets have example 2
+
+// // example two
+
+// const array1 =[1,2,3,4];
+
+// const my_copy=[...array];
+
+// my_copy.push(80)
+
+// console.log(array1)
 
 
 
 
-function sayHello(name="guest"){
-   
-    console.log(`hello ${name}`)
-}
-sayHello()
-sayHello("bob")
+
+
+
+
+
+
+
+// const numbers =[7,8,9,6];
+
+// console.log(...numbers)
+
+// const subjects=["English","science"]
+// console.log(subjects)
