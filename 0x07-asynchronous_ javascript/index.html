@@ -8,16 +8,59 @@
 <body>
   
   <script>
-    function fetchData(callback) {
-  setTimeout(() => {
-    let data = { username: "carl peters", role: "Admin" };
-    callback(data);
-  }, 2000);
+function fetchUser() {
+  return new Promise(function (resolve, reject) {
+    let error = false;
+    if (error === true) {
+      reject("There is an error");
+    } else {
+      resolve({ username: "_cooper", role: "Admin" });
+    }
+  });
 }
 
-fetchData(function (data) {
-  console.log(`Username is ${data.username} and role is ${data.role}`);
-});
+fetchUser()
+  .then((user) => {
+    console.log(`Username: ${user.username}, Role: ${user.role}`);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
+
+
+
+
+
+
+
+// let myPromise = new Promise(function (resolve, reject) {
+//   let x = 9;
+//   if (x === 5) {
+//     resolve("x is 5");
+//   } else {
+//     reject("x is not 5");
+//   }
+// });
+// myPromise
+//   .then((result) => {
+//     console.log(result);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   })
+//   .finally(() => {
+//     console.log("This is a promise")});
+  
+//     function fetchData(callback) {
+//   setTimeout(() => {
+//     let data = { username: "carl peters", role: "Admin" };
+//     callback(data);
+//   }, 2000);
+// }
+
+// fetchData(function (data) {
+//   console.log(`Username is ${data.username} and role is ${data.role}`);
+// });
 //     function fetchData() {
 //     let data = { username: "carl peters", role: "user" };
 //     return data;
