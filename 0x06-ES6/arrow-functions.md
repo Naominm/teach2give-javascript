@@ -15,8 +15,7 @@ console.log(add(6,8));// output 14
 
 **with arrow functions**
 
-    ```js
+```js
     const add =(a,b)=> a + b ;
-
-console.log(add(6,8));
+    console.log(add(6,8));
 ```
