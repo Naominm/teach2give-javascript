@@ -1,15 +1,11 @@
 
-
-const person={
- firstName: "John",
-  lastName: "smit",
-  dateOfBirth: 2001,
-  major: "Computer Science",
-  profession: "Web Designer",
+const user ={
+    ["first" +"Name"]:"Carl",
+    lastName:"Peters",
+    age:100,
 };
 
-const { firstName, lastName, ...otherDetails } = person;
-console.log(otherDetails);
+console.log(user)
 
 
 
@@ -18,37 +14,33 @@ console.log(otherDetails);
 
 
 
-// const person = {
-//     name: "Naomi",
-//     age: 24,
-// };
-  
-// const {
-//      name:firstName ,
-//     age:yearsOld,
-//     major="SE",
-// } = person;
-
-//   console.log(firstName); // Naomi
-//   console.log(yearsOld); // 24
-//   console.log(major); //SE
+// const user = {
+//     firstName: "Naomi",
+//     lastName: "Smith",
+//     age: 25,
+//    message() {
+//       console.log(`My name is ${this.firstName} ${this.lastName}`);
+//     },
+// // Before es6
+// // message: function () {
+// //     console.log(`My name is ${this.firstName} ${this.lastName}`);
+// //   },
 
 
-
-
-// // let a=6, b=7;
-// // [a,b]=[b,a];
-
-// // console.log(a); // 7
-// // console.log(b); // 6
+//   };
+//   user.message();
 
 
 
 
 
-// // const numbers=[1,2,3];
-
-// // const [, second, ]=numbers
 
 
-// // console.log(second);
+
+// // const firstName = "Naomi";
+// // const lastName = "smith";
+// // const age = 25;
+
+// // const user = { firstName, lastName, age }; // earlier
+// // //const user = { firstName: firstName, lastName: lastName, age: age }; 
+// // console.log(user); 
