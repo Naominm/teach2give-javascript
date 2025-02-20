@@ -8,13 +8,34 @@
 <body>
   
   <script>
-    
-setTimeout(() => {
-    console.log("JavaScript");
+    function fetchData(callback) {
+  setTimeout(() => {
+    let data = { username: "carl peters", role: "Admin" };
+    callback(data);
   }, 2000);
+}
+
+fetchData(function (data) {
+  console.log(`Username is ${data.username} and role is ${data.role}`);
+});
+//     function fetchData() {
+//     let data = { username: "carl peters", role: "user" };
+//     return data;
+// }
+
+// function showData(data) {
+//     console.log(`Username is ${data.username} and role is ${data.role}`);
+// }
+
+// const userData = fetchData();
+// showData(userData);
+    
+// setTimeout(() => {
+//     console.log("JavaScript");
+//   }, 2000);
   
-  console.log("Hello World");
-  console.log("Goodbye World");
+//   console.log("Hello World");
+//   console.log("Goodbye World");
   
   </script>
 </body>
