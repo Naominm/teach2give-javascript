@@ -1,5 +1,5 @@
 # Destructuring
-Destructuring is a convenient  way to extract values from arrays or objects or objects and assign variables in a single line.
+Destructuring is a convenient  way to extract values from arrays or objects and assign variables in a single line.
 
 ## Destructuring Arrays
 ```js
