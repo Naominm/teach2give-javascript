@@ -8,24 +8,106 @@
 <body>
   
   <script>
-function fetchUser() {
+    function fetchUser() {
   return new Promise(function (resolve, reject) {
-    let error = false;
+    let error = true;
     if (error === true) {
-      reject("There is an error");
+      reject("There was an error");
     } else {
       resolve({ username: "_cooper", role: "Admin" });
     }
   });
 }
 
-fetchUser()
-  .then((user) => {
-    console.log(`Username: ${user.username}, Role: ${user.role}`);
-  })
-  .catch((error) => {
+async function processUser() {
+  try {
+    const user = await fetchUser();
+    console.log(user);
+  } catch (error) {
     console.log(error);
-  });
+  } finally {
+    console.log(`Process completed`);
+  }
+}
+
+processUser();
+//     function fetchUser() {
+//   return new Promise(function (resolve, reject) {
+//     let error = true;
+//     if (error === true) {
+//       reject("There was an error");
+//     } else {
+//       resolve({ username: "_cooper", role: "Admin" });
+//     }
+//   });
+// }
+
+// async function processUser() {
+//   try {
+//     const user = await fetchUser();
+//     console.log(user);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+
+// processUser();
+//     function fetchUser() {
+//   return new Promise(function (resolve, reject) {
+//     let error = true;
+//     if (error === true) {
+//       reject("There was an error");
+//     } else {
+//       resolve({ username: "_cooper", role: "Admin" });
+//     }
+//   });
+// }
+
+// async function processUser() {
+//   try {
+//     const user = await fetchUser();
+//     console.log(user);
+//   } catch {
+//     console.log("Err"); //catch block can also receive the error/
+//   }
+// }
+
+// processUser();
+//     function fetchUser() {
+//   return new Promise(function (resolve, reject) {
+//     let error = true;
+//     if (error === true) {
+//       reject("There was an error");
+//     } else {
+//       resolve({ username: "_cooper", role: "Admin" });
+//     }
+//   });
+// }
+
+// async function processUser() {
+//   const user = await fetchUser();
+//   console.log(user);
+// }
+
+// processUser();
+// function fetchUser() {
+//   return new Promise(function (resolve, reject) {
+//     let error = false;
+//     if (error === true) {
+//       reject("There is an error");
+//     } else {
+//       resolve({ username: "_cooper", role: "Admin" });
+//     }
+//   });
+// }
+
+// fetchUser()
+//   .then((user) => {
+//     console.log(`Username: ${user.username}, Role: ${user.role}`);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
 
 
 
