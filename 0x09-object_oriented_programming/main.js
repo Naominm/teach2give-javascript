@@ -1,20 +1,60 @@
 
-class Counter{
-    static count =0;
 
-    static increment (){
-        Counter.count++;
+class User {
+    constructor(name) {
+      this._name = name; 
     }
-    static getCount(){
-        return Counter.count;
+  
+    
+    get name() {
+      return this._name;
     }
-}
+  
+   
+    set name(newName) {
+      if (typeof newName !== "string") {
+        console.error("Name must be a string!");
+        return;
+      }
+      this._name = newName;
+    }
+  }
+  
+  const user = new User("Jason");
+  
+ 
+  console.log(user.name); 
+  
+  
+  user.name = "Dan"; 
+  console.log(user.name); 
+  
+  user.name = 72; //error
 
-console.log(Counter.getCount());
 
-Counter.increment();
-Counter.increment();
-console.log(Counter.getCount());
+
+
+
+
+
+
+
+// class Counter{
+//     static count =0;
+
+//     static increment (){
+//         Counter.count++;
+//     }
+//     static getCount(){
+//         return Counter.count;
+//     }
+// }
+
+// console.log(Counter.getCount());
+
+// Counter.increment();
+// Counter.increment();
+// console.log(Counter.getCount());
 
 
 
