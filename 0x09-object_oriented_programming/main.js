@@ -1,30 +1,20 @@
 
-class Math {
-    add(number1, number2) {
-      return number1 + number2;
+class Counter{
+    static count =0;
+
+    static increment (){
+        Counter.count++;
     }
-  }
-  
-  class Arithmetics extends Math {
-    add(num1, num2) {
-      if (num1 < 0) {
-        console.log("Number must be positive");
-      } else if (num2 < 0) {
-        console.log("Number must be positive");
-      } else {
-        console.log(num1 + num2);
-      }
+    static getCount(){
+        return Counter.count;
     }
-  }
-  
-  const arithmetic = new Arithmetics();
-  arithmetic.add(-8, 8);
-  arithmetic.add(8, -8);
-  arithmetic.add(10, 8);
+}
 
+console.log(Counter.getCount());
 
-
-
+Counter.increment();
+Counter.increment();
+console.log(Counter.getCount());
 
 
 
