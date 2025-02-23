@@ -1,28 +1,60 @@
 
-class Human {
-    constructor(numLegs, numEyes) {
-      this.numLegs = numLegs;
-      this.numEyes = numEyes;
+class Math {
+    add(number1, number2) {
+      return number1 + number2;
     }
-    move(){
-        console.log(`Person has ${this.numLegs} legs` );
-        console.log(`Person has ${this.eys} eyes`)
+  }
+  
+  class Arithmetics extends Math {
+    add(num1, num2) {
+      if (num1 < 0) {
+        console.log("Number must be positive");
+      } else if (num2 < 0) {
+        console.log("Number must be positive");
+      } else {
+        console.log(num1 + num2);
+      }
     }
-    eat(){
-        console.log("Human eat for survival")
-    }
-}
+  }
+  
+  const arithmetic = new Arithmetics();
+  arithmetic.add(-8, 8);
+  arithmetic.add(8, -8);
+  arithmetic.add(10, 8);
 
-class Person extends Human{
-    constructor(numEyes,numLegs,Gender){
-    super(numLegs, numEyes)
-    this.gender=this.gender
-}
-}
 
-const Naomi=new Person(2,2,"Male")
-Naomi.move()
-Naomi.eat()
+
+
+
+
+
+
+
+
+// class Human {
+//     constructor(numLegs, numEyes) {
+//       this.numLegs = numLegs;
+//       this.numEyes = numEyes;
+//     }
+//     move(){
+//         console.log(`Person has ${this.numLegs} legs` );
+//         console.log(`Person has ${this.eys} eyes`)
+//     }
+//     eat(){
+//         console.log("Human eat for survival")
+//     }
+// }
+
+// class Person extends Human{
+//     constructor(numEyes,numLegs,Gender){
+//     super(numLegs, numEyes)
+//     this.gender=this.gender
+// }
+// }
+
+// const Naomi=new Person(2,2,"Male")
+// Naomi.move()
+// Naomi.eat()
 
 
 
